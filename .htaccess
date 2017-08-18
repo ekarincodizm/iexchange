@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase  /gl_exchange/
+RewriteBase  /iexchange/
  
 RewriteCond %{REQUEST_URI} ^system.*
 RewriteRule ^(.*)$ index.php?/$1 [L]
