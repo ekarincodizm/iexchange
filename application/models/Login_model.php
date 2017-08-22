@@ -24,10 +24,10 @@ LEFT JOIN station ON station.id = user_role.id_station
 
 WHERE 
 
-CONCAT(user_role.id_station,user_role.id_user) = '$username' AND `user`.`password` = '$password'
+CONCAT(user_role.id_station,user_role.id_user) = ? AND `user`.`password` = ?
 
 LIMIT 1";
-        $query = $this->db->query($sql);
+        $query = $this->db->query($sql,array($username,$password));
         if ($query->num_rows()) {
             return $query->row();
         }

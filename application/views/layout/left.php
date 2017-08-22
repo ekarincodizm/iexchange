@@ -35,7 +35,7 @@
             <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
         </li>
         <li>
-            <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+            <a href="<?= base_url()?>login/logout"><i class="fa fa-fw fa-key"></i> ออกจากระบบ</a>
         </li>
     </ul>
 </div>

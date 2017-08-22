@@ -30,8 +30,28 @@ class Login extends CI_Controller {
     }
 
     public function p_login() {
-       $dt =$this->Login_model->get_user('010003','pass01');
-       print_r($dt);
+        $dt = $this->Login_model->get_user($this->input->post('username'), $this->input->post('password'));
+        if ($dt) {
+            $this->session->set_userdata('id_user', $dt->id_user);
+           
+            $this->session->set_userdata('fullname', $dt->fullname . ' (' . $dt->nickname . ')');
+            $this->session->set_userdata('id_user_level', $dt->id_user_level);
+            if ($dt->id_user_level != 1) {
+                $this->session->set_userdata('id_station', $dt->id_station);
+                $this->session->set_userdata('station_name', $dt->name);
+            } else {
+                $this->session->set_userdata('id_station', '00');
+                $this->session->set_userdata('station_name', 'สำนักงานใหญ่');
+            }
+            redirect('home', 'refresh');
+        }
+
+        // print_r($dt);
+    }
+
+    function logout() {
+        $this->session->sess_destroy();
+        redirect('/login/', 'refresh');
     }
 
 }
