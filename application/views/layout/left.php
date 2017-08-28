@@ -7,7 +7,7 @@
             <a href="index.html"><i class="fa fa-fw fa-home"></i> หน้าหลัก</a>
         </li>
         <li>
-            <a href="index.html"><i class="fa fa-fw fa-money"></i> ซื้อเข้า</a>
+            <a href="<?= base_url('transection/buy')?>"><i class="fa fa-fw fa-money"></i> ซื้อเข้า</a>
         </li>
         <li>
             <a href="index.html"><i class="fa fa-fw fa-money"></i> ขายออก</a>
