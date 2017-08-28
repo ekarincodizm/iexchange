@@ -25,10 +25,13 @@ class Login extends CI_Controller {
     }
 
     public function index() {
-        //echo 'aaaa';
         $this->load->view('index');
     }
 
+     public function login() {
+
+        $this->load->view('index');
+    }
     public function p_login() {
         $dt = $this->Login_model->get_user($this->input->post('username'), $this->input->post('password'));
         if ($dt) {
