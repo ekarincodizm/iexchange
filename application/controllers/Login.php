@@ -47,6 +47,9 @@ class Login extends CI_Controller {
                 $this->session->set_userdata('station_name', 'สำนักงานใหญ่');
             }
             redirect('home', 'refresh');
+        }else
+        {
+            redirect('/login/', 'refresh');
         }
 
         // print_r($dt);

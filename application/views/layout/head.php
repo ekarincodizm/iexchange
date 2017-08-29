@@ -12,16 +12,16 @@
         <title>I-Exchange Online Exchange Manager V.1.0</title>
 
         <!-- Bootstrap Core CSS -->
-        <link href="<?= base_url() ?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?= base_url('bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css">
 
         <!-- Custom CSS -->
-        <link href="<?= base_url() ?>bootstrap/css/sb-admin.css" rel="stylesheet">
+        <link href="<?= base_url('bootstrap/css/sb-admin.css') ?>" rel="stylesheet" type="text/css">
 
-        <!-- Morris Charts CSS -->
-        <link href="<?= base_url() ?>bootstrap/css/plugins/morris.css" rel="stylesheet">
+   
 
         <!-- Custom Fonts -->
-        <link href="<?= base_url() ?>bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="<?= base_url('bootstrap/font-awesome/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css">
+        <link href="<?= base_url('asset/autocomplete/magicsuggest-min.css') ?>" rel="stylesheet" type="text/css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
