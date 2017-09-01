@@ -68,7 +68,37 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-12">
+                    <table class="table table-responsive table-striped table-bordered">
+                        <thead>
 
+                        <th>Monetory</th>
+                        <th>Rate</th>
+                        <th>Amount</th>
+                        <th>Total</th>
+                        <th>Delete</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                            </tr>
+                            <tr>
+
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
             </form>
         </div>
     </div>
