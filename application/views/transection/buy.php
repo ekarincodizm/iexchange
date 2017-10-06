@@ -102,6 +102,7 @@
 
 
         $('#form1').submit(function () {
+           
             var tableRef = document.getElementById('tb').getElementsByTagName('tbody')[0];
 // Insert a row in the table at the last row
             var newRow = tableRef.insertRow(tableRef.rows.length);
@@ -130,7 +131,7 @@
 
 
 
-        $('#id_country').magicSuggest({
+      var ms =  $('#id_country').magicSuggest({
             data: '<?= base_url('country/get_country') ?>',
             valueField: 'id',
             displayField: 'name',
@@ -144,6 +145,8 @@
             useCommaKey: false
 
         });
+        
+       
     });
 
 
